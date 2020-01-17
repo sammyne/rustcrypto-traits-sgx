@@ -11,8 +11,8 @@ categories = ["cryptography", "no-std"]
 
 [dependencies]
 generic-array = "0.12"
-blobby = { git = "https://github.com/mesalock-linux/rustcrypto-utils-sgx", optional = true }
-sgx_tstd = { rev = "v1.0.9", git = "https://github.com/baidu/rust-sgx-sdk.git", optional = true }
+blobby = { git = "https://github.com/mesalock-linux/rustcrypto-utils-sgx", optional = true, tag = "sgx_1.0.9" }
+sgx_tstd = { git = "https://github.com/apache/incubator-teaclave-sgx-sdk", optional = true, tag = "v1.0.9" }
 
 [features]
 std = ["mesalock_sgx"]
